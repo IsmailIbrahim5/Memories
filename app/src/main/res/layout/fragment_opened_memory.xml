@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <com.idea.memories.Views.CustomViews.CircularRevealFrameLayout
+        android:id="@+id/media_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="12dp"
+        android:background="@android:color/transparent"
+        >
+
+    </com.idea.memories.Views.CustomViews.CircularRevealFrameLayout>
+
+    <ImageView
+        android:id="@+id/memory_background"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:scaleType="fitXY"
+        android:clickable="false"
+        android:translationY="-215dp"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/top_side"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+
+        >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@android:color/transparent"
+        android:translationY="-200dp"
+        >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:contentScrim="@android:color/transparent"
+            app:expandedTitleGravity="bottom|center_horizontal"
+            app:collapsedTitleGravity="center_horizontal"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleMarginBottom="62dp"
+            app:expandedTitleTextAppearance="@style/ExpandedToolbarTitleAppearance"
+            app:collapsedTitleTextAppearance="@style/CollapsedToolbarTitleAppearance"
+            android:background="@android:color/transparent"
+            >
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/opened_memory_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+
+                />
+            <EditText
+                android:id="@+id/title_edit"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:textSize="42sp"
+                android:textColor="@color/half_transparent"
+                android:backgroundTint="@color/half_transparent"
+                android:visibility="gone"
+                android:inputType="text"
+                android:textCursorDrawable="@android:color/transparent"
+                android:focusable="true"
+                app:autoSizeTextType="uniform"/>
+
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/half_transparent"
+                    android:text="2019/1/1"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="false"/>
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <FrameLayout
+            android:id="@+id/bot_side"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@android:color/transparent"
+            android:translationY="2000dp"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+            <com.idea.memories.Views.CustomViews.ImageShape
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:path_string="M0,10 C0,10 0,0 20,10 z C5,10 0,-7 50,10 z C10,10 20,-12 55,10z C10,10 50,-12 70,10 zC5,10 75,-5 75,10 L75,100  0,100"
+                app:path_color="@color/white"
+                app:shadow_radius="0"
+                app:path_height="100"
+                app:path_width="75"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"/>
+
+            <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:scaleY="1"
+
+            app:elevation="8dp"
+            android:paddingTop="35dp"
+
+
+            android:overScrollMode="never"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+
+            >
+            <ViewSwitcher
+                android:id="@+id/my_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:adjustViewBounds="true">
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8dp"
+                    android:textSize="16sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/desc_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="8dp"
+                    android:hint="Description"
+                    android:imeOptions="actionGo"
+                    android:textSize="16sp"
+                    />
+            </ViewSwitcher>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/fabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|end">
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/color_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="18dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:elevation="8dp"
+            android:src="@drawable/ic_color_palette"
+            app:fabSize="mini"
+            android:scaleY="0"
+            app:tint="@color/white"
+            />
+
+
+        <ViewSwitcher
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/media_button"
+            >
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/media_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="18dp"
+                android:layout_marginEnd="4dp"
+                android:elevation="8dp"
+                android:src="@drawable/ic_media"
+                app:fabSize="mini"
+                android:scaleY="0"
+                app:tint="@color/white"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                app:cardCornerRadius="21dp"
+                app:elevation="8dp"
+                android:scaleY="0">
+                <ImageView
+                    android:id="@+id/media_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+            </androidx.cardview.widget.CardView>
+
+
+        </ViewSwitcher>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/edit_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/anim_edit_to_done"
+            android:elevation="8dp"
+            android:scaleX="0"
+            app:tint="@color/white"
+            />
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

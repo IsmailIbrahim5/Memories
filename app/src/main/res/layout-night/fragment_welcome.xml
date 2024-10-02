@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_night_mode"
+    tools:context=".Views.Activities.MainActivity">
+
+    <com.idea.memories.Views.CustomViews.TextShape
+        android:id="@+id/logo"
+        android:layout_width="350dp"
+        android:layout_height="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:path_string="m21.175 15.905c0.256 0.737 0.399 1.563 0.399 2.434c0 3.126 -1.844 5.66 -4.118 5.66c-1.416 0 -2.664 -0.983 -3.405 -2.478c-0.575 1.147 -1.428 1.875 -2.38 1.875c-1.238 0 -2.308 -1.229 -2.817 -3.013c-0.674 0.611 -1.52 0.975 -2.438 0.975c-1.83 0 -3.372 -1.445 -3.843 -3.414c-1.135 -0.152 -2.018 -1.302 -2.018 -2.699c0 -0.301 0.042 -0.589 0.118 -0.86c-0.338 -0.179 -0.573 -0.571 -0.573 -1.027c0 -0.333 0.126 -0.632 0.326 -0.839c-0.269 -0.57 -0.427 -1.254 -0.427 -1.991c0 -1.957 1.105 -3.546 2.477 -3.583c0.057 -2.932 1.799 -5.285 3.94 -5.285c1.32 0 2.487 0.895 3.203 2.268c0.822 -2.338 2.439 -3.928 4.3 -3.928c2.555 0 4.651 2.996 4.859 6.81c0.506 -0.395 1.089 -0.621 1.71 -0.621c1.939 0 3.512 2.196 3.512 4.906c0 2.381 -1.214 4.365 -2.825 4.811z"
+        app:path_height="24"
+        app:path_width="24"
+        app:shadow_x="8"
+        app:shadow_y="8"
+        app:shadow_radius="8"
+        app:shadow_color="@color/small_shadow_dark_color"
+        app:path_color="@color/white"
+        android:text="M"
+        android:gravity="center"
+        android:textSize="90sp"
+        android:textColor="@color/light_grey"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

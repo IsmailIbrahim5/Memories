@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sky">#1a94cb</color>
+    <color name="white">#ffffff</color>
+    <color name="half_transparent">#B3FFFFFF</color>
+
+    <color name="light_grey">#424242</color>
+
+    <color name="small_shadow_dark_color">#1E000000</color>
+    <color name="shadow_dark_color">#41000000</color>
+
+    <color name="background">#121212</color>
+
+    <color name="blue">#2195f2</color>
+    <color name="light_blue">#402195F2</color>
+    <color name="red">#c62828</color>
+    <color name="light_red">#40c62828</color>
+    <color name="yellow">#ffd54f</color>
+    <color name="light_yellow">#40ffd54f</color>
+    <color name="green">#43a047</color>
+    <color name="light_green">#4043a047</color>
+
+    <color name="deleted">#BABDB6</color>
+
+    <color name="navigation_bar_color">#1a94cb</color>
+    <color name="status_bar_color">#1a94cb</color>
+
+    <color name="facebook">#1877f2</color>
+    <color name="twitter">#1da1f2</color>
+    <color name="youtube">#ff0000</color>
+
+    <color name="googleplay_blue">#2196f3</color>
+    <color name="googleplay_yellow">#ffc107</color>
+    <color name="googleplay_red">#f44336</color>
+    <color name="email">#ffd54f</color>
+    <color name="instagram">#fdb54e</color>
+</resources>

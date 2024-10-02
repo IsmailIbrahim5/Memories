@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomShape">
+        <attr name="path_string" format="string"/>
+        <attr name="path_height" format="float"/>
+        <attr name="path_width" format="float"/>
+        <attr name="path_color" format="integer"/>
+        <attr name="shadow_radius" format="integer"/>
+        <attr name="shadow_color" format="integer"/>
+        <attr name="shadow_x" format="integer"/>
+        <attr name="shadow_y" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="NavigationBar">
+        <attr name="nav_path_color" format="integer"/>
+        <attr name="nav_shadow_radius" format="float"/>
+        <attr name="nav_shadow_color" format="integer"/>
+        <attr name="nav_fab_id" format="reference"/>
+    </declare-styleable>
+</resources>

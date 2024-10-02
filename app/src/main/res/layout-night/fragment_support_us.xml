@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_night_mode"
+    tools:context=".Views.Fragments.FavouriteFragment">
+
+    <com.idea.memories.Views.CustomViews.FrameShape
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="8dp"
+        android:background="@android:color/transparent"
+        app:path_string="M0,5 C0,5 0,15 20,5 z C5,5 0,23 50,5 z C10,5 20,27 55,5z C10,5 50,27 70,5 zC5,5 75,20 75,6 L75,0  0,0"
+        app:path_color="@color/white"
+        app:path_width="75"
+        app:path_height="15"
+        app:shadow_radius="0"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support us!"
+            android:textColor="@color/light_grey"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+    </com.idea.memories.Views.CustomViews.FrameShape>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="108dp"
+                android:paddingBottom="8dp"
+                android:clipToPadding="false"
+                >
+
+                <FrameLayout
+                    android:id="@+id/facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:elevation="8dp"
+                    android:background="@drawable/shape_facebook"
+                    tools:ignore="Suspicious0dp">
+
+
+                    <FrameLayout
+                        android:id="@+id/facebook_inside"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_facebook"
+                        android:backgroundTint="@color/white"
+                        android:alpha="0"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:clickable="false"
+                        >
+                        <TextView
+                            android:id="@+id/facebook_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MEMORIES\nOFFICIALAPP"
+                            android:textColor="@color/facebook"
+                            android:textSize="28sp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:layout_marginBottom="6dp"
+                            android:fontFamily="@font/impact"/>
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/facebook_logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/facebook_logo"
+                        android:layout_gravity="center"
+                        android:tint="@color/light_grey"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:elevation="8dp"
+                    android:background="@drawable/shape_twitter"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    tools:ignore="Suspicious0dp">
+
+
+                    <FrameLayout
+                        android:id="@+id/twitter_inside"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_twitter"
+                        android:backgroundTint="@color/white"
+                        android:alpha="0"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:clickable="false"
+                        >
+
+
+
+
+                        <TextView
+                            android:id="@+id/twitter_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MEMORIES\nOAPP"
+                            android:textColor="@color/twitter"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:layout_marginBottom="6dp"
+                            android:fontFamily="@font/impact"
+                            android:textSize="28sp"/>
+
+                    </FrameLayout>
+                    <ImageView
+                        android:id="@+id/twitter_logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/twitter_logo"
+                        android:layout_gravity="center"
+                        android:tint="@color/light_grey"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:clipToPadding="false"
+                >
+
+
+                <FrameLayout
+                    android:id="@+id/instagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:elevation="8dp"
+                    android:background="@drawable/shape_instagram"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="Suspicious0dp">
+
+
+                    <FrameLayout
+                        android:id="@+id/instagram_inside"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:alpha="0"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:clickable="false"
+                        >
+
+
+
+
+                        <TextView
+                            android:id="@+id/instagram_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MEMORIES\nOFFICIALAPP"
+                            android:textColor="@color/instagram"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:layout_marginBottom="6dp"
+                            android:fontFamily="@font/impact"
+                            android:textSize="28sp"/>
+
+                    </FrameLayout>
+                    <ImageView
+                        android:id="@+id/instagram_logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/instagram_logo"
+                        android:layout_gravity="center"
+                        android:tint="@color/light_grey"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/youtube"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:elevation="8dp"
+                    android:background="@drawable/shape_youtube"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    tools:ignore="Suspicious0dp">
+
+
+                    <FrameLayout
+                        android:id="@+id/youtube_inside"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:alpha="0"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:clickable="false"
+                        >
+
+
+
+
+                        <TextView
+                            android:id="@+id/youtube_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MEMORIES\nOFFICIAL"
+                            android:textColor="@color/youtube"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:layout_marginBottom="6dp"
+                            android:fontFamily="@font/impact"
+                            android:textSize="28sp"/>
+
+                    </FrameLayout>
+                    <ImageView
+                        android:id="@+id/youtube_logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/youtube_logo"
+                        android:layout_gravity="center"
+                        android:tint="@color/light_grey"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:clipToPadding="false"
+                >
+
+                <FrameLayout
+                    android:id="@+id/google_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:elevation="8dp"
+                    android:background="@drawable/shape_googleplay"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="Suspicious0dp">
+
+
+                    <FrameLayout
+                        android:id="@+id/google_play_inside"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:alpha="0"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:clickable="false"
+                        >
+
+
+
+
+                        <TextView
+                            android:id="@+id/google_play_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RATE US"
+                            android:textColor="#f64434"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:layout_marginBottom="26dp"
+                            android:fontFamily="@font/impact"
+                            android:textSize="32sp"/>
+
+                    </FrameLayout>
+                    <ImageView
+                        android:id="@+id/google_play_logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_google_play"
+                        android:layout_gravity="center"
+                        android:tint="@color/light_grey"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:elevation="8dp"
+                    android:background="@drawable/shape_email"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    tools:ignore="Suspicious0dp">
+
+
+                    <FrameLayout
+                        android:id="@+id/email_inside"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:alpha="0"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:clickable="false"
+                        >
+
+
+
+
+                        <TextView
+                            android:id="@+id/email_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\@MEMORIES\nAPPOFFICIAL"
+                            android:textColor="@color/email"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:layout_marginBottom="6dp"
+                            android:fontFamily="@font/impact"
+                            android:textSize="28sp"/>
+
+                    </FrameLayout>
+                    <ImageView
+                        android:id="@+id/email_logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_mail"
+                        android:layout_gravity="center"
+                        android:tint="@color/light_grey"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/refer"
+                android:layout_marginBottom="8dp"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/refer"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:id="@+id/root"
+    android:scaleX="0"
+    >
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+
+
+        <com.idea.memories.Views.CustomViews.ImageShape
+            android:id="@+id/background_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:path_string="M 24 12.53 C 24 13.955 23.021 15.153 21.692 15.506 C 21.703 15.639 21.709 15.775 21.709 15.912 C 21.709 17.929 20.526 19.563 19.067 19.563 C 18.548 19.563 18.064 19.356 17.655 18.998 C 16.889 19.91 15.485 20.521 13.878 20.521 C 12.57 20.521 11.396 20.115 10.591 19.472 C 9.748 20.397 8.37 21 6.811 21 C 4.244 21 2.164 19.365 2.164 17.349 C 2.164 16.971 2.239 16.608 2.375 16.265 C 1.263 15.761 0.509 14.787 0.509 13.667 C 0.509 13.341 0.574 13.027 0.692 12.734 C 0.264 12.341 -0.001 11.804 -0.001 11.213 C -0.001 10.352 0.558 9.609 1.369 9.253 C 1.264 9.018 1.209 8.773 1.209 8.52 C 1.209 6.884 3.532 5.557 6.397 5.557 C 7.232 5.557 8.021 5.67 8.72 5.871 C 9.608 4.763 11.441 4.001 13.559 4.001 C 16.548 4.001 18.97 5.515 18.97 7.383 C 18.97 7.393 18.969 7.402 18.969 7.412 C 19.406 7.26 19.905 7.174 20.434 7.174 C 22.157 7.174 23.553 8.085 23.553 9.209 C 23.553 9.618 23.367 9.998 23.049 10.317 C 23.634 10.877 23.999 11.662 23.999 12.531 Z"
+            app:path_width="24"
+            app:path_height="24"
+            app:shadow_radius="0"
+            app:path_color="@color/white"
+
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_grey"
+            android:layout_marginBottom="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text=""
+            />
+
+        <!--
+        <View
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_below="@id/title"/>
+-->
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/light_grey"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"/>
+
+        <!--
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/ic_menu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="36dp"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_menu"
+                android:layout_gravity="center"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+-->
+        <ImageView
+            android:id="@+id/favourited"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            app:srcCompat="@drawable/ic_white_favourite_on"
+            android:tint="@color/light_grey"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="12dp"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

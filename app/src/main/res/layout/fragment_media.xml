@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Views.Fragments.MediaFragment"
+    android:background="@android:color/transparent"
+    android:clickable="true">
+
+    <FrameLayout
+        android:id="@+id/opened_media_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="12dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/media_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/white_to_transparent"
+        android:elevation="8dp"
+        app:titleTextColor="@color/sky"
+
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/media_files_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_below="@id/media_toolbar">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_add"
+
+        android:elevation="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:backgroundTint="@color/sky"
+        app:tint="@color/white"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/video_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="21dp"
+        android:layout_toLeftOf="@id/photo_fab"
+        android:elevation="8dp"
+        android:src="@drawable/ic_video"
+        app:fabSize="mini"
+        app:backgroundTint="@color/sky"
+        app:maxImageSize="16dp"
+        android:scaleY="0"
+        app:tint="@color/white"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/photo_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@id/add_fab"
+        android:elevation="8dp"
+        android:src="@drawable/ic_photo"
+        app:fabSize="mini"
+        app:backgroundTint="@color/sky"
+        app:maxImageSize="16dp"
+        android:scaleY="0"
+        app:tint="@color/white"
+        />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/voice_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@id/video_fab"
+        android:elevation="8dp"
+        android:src="@drawable/ic_microphone_bcs_it_gets_mad_when_we_use_the_same_drawable"
+        app:fabSize="mini"
+        app:backgroundTint="@color/sky"
+        app:maxImageSize="16dp"
+        android:scaleY="0"
+        app:tint="@color/white"
+        />
+</RelativeLayout>

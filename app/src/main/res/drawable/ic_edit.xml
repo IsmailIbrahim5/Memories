@@ -1,0 +1,28 @@
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    >
+    <!-- made by me ! and i'm so proud of it :D -->
+    <group android:name="part1"
+        android:rotation="45"
+        android:translateY="15.5"
+        android:translateX="6.5">
+        <path
+            android:name="path_part1"
+            android:fillColor="#fff"
+            android:pathData="m0,3 C0,3 0,3 4,3 L2,6 C2,6 2,6 2,6"/>
+    </group>
+    <group
+        android:name="part2"
+        android:rotation="45"
+        android:translateX="22"
+        >
+        <path
+            android:name="path_part2"
+            android:fillColor="#fff" android:pathData="M0,7 4,7 4,24 C4,24 0,24 0,24 M0,6.5 C0,4 4,4 4,6.5" />
+    </group>
+
+</vector>

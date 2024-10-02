@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            >
+        </androidx.viewpager.widget.ViewPager>
+
+
+        <RelativeLayout
+            android:id="@+id/bottom_navigation_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+
+            <com.idea.memories.Views.CustomViews.NavigationBar
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:nav_fab_id="@id/add_memory_button"
+                android:background="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                app:nav_path_color="@color/white"
+                android:elevation="8dp"
+                android:clickable="true">
+                <ImageView
+                    android:id="@+id/bottom_nav_home_button"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="58dp"
+                    android:clickable="false"
+                    android:tint="@color/light_grey"/>
+
+
+                <ImageView
+                    android:id="@+id/search_button"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginTop="58dp"
+                    android:tint="@color/light_grey"/>
+
+
+            </com.idea.memories.Views.CustomViews.NavigationBar>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_memory_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/bottom_navigation"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_add"
+                app:backgroundTint="@color/white"
+                app:elevation="8dp"
+                app:fabCustomSize="80dp"
+                app:hoveredFocusedTranslationZ="12dp"
+                app:maxImageSize="55dp"
+                app:pressedTranslationZ="10dp"
+                app:tint="@color/light_grey"/>
+        </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

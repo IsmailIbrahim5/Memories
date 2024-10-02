@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Memories</string>
+
+    <string name="notification_description_1">It has been one whole year. Doesn\'t seem so?</string>
+    <string name="notification_description_2">I\'m sure you have a lot to remember about that day!</string>
+    <string name="notification_description_3">Did you know that this was on this day one year ago!</string>
+    <string name="notification_description_4">This memory is one year old now. Time runs so fast! </string>
+    <string name="notification_description_5">Give it a visit and look how did that day go!</string>
+    <string name="notification_description_6">I wonder what happened that day!</string>
+    <string name="notification_description_7">Give yourself a break see how did that day go!</string>
+    <string name="notification_description_8">Can you believe that it has been one whole year!</string>
+    <string name="notification_description_9">Does it ring any bells?</string>
+
+
+    <string name="notification_description_10">I missed you! 😔</string>
+    <string name="notification_description_11">I\'m sure you had a lot going on this while!</string>
+    <string name="notification_description_12">How have you been this while?</string>
+    <string name="notification_description_13">How was your day so far?</string>
+    <string name="notification_description_14">I missed when you were telling me about your day 🙁</string>
+    <string name="notification_description_15">Just to be clear.. i\'m here if you wanted to tell me about your day 😄</string>
+    <string name="notification_description_16">Don\'t you have anything to tell me about ? 🥺</string>
+    <string name="notification_description_17">Hey! I\'m the app called Memories on your phone and you are not using me anymore. that\'s rude 🙄</string>
+    <string name="notification_description_18">I wonder where have you been all this while? 🤔</string>
+    <string name="notification_description_19">Are you still alive? 👀</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
